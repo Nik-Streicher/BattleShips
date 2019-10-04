@@ -1,15 +1,15 @@
 class Ships {
 
     //Ships
-    private int[] aircraftCarrier ={ 1 , 2 , 3 , 4 , 5};
-    private int[] battleship = { 1 , 2 , 3 , 4 };
-    private int[] cruiser = { 1 , 2 , 3 };
-    private int[] destroyer = { 1 , 2};
+    private int[] aircraftCarrier = new int[5];
+    private int[] battleship = new int[4];
+    private int[] cruiser = new int[3];
+    private int[] destroyer = new int[2];
     //Ships Locations
-    private int locationOAircraftCarrier = 0;
-    private int locationOfBattleship = 1;
-    private int locationOfCruiser = 3;
-    private int locationOfDestroyer = 4;
+    private int locationOAircraftCarrier;
+    private int locationOfBattleship;
+    private int locationOfCruiser;
+    private int locationOfDestroyer;
 
     //Checking hits
     boolean getHit(int column, int row){
@@ -39,25 +39,37 @@ class Ships {
     }
 
     //Set
-    public void setAircraftCarrier(int[] aircraftCarrier) {
-        this.aircraftCarrier = aircraftCarrier;
+    void setAircraftCarrier(int startAircraftCarrier) {
+        for(int x = 0; x <aircraftCarrier.length; x++){
+            aircraftCarrier[x] = startAircraftCarrier;
+            startAircraftCarrier++;
+
+        }
     }
 
-    public void setBattleship(int[] battleship) {
-        this.battleship = battleship;
+    void setBattleship(int startBattleship) {
+        for(int x = 0; x <battleship.length; x++) {
+            battleship[x] = startBattleship;
+            startBattleship++;
+        }
     }
 
-    public void setCruiser(int[] cruiser) {
-        this.cruiser = cruiser;
+    void setCruiser(int startCruiser) {
+            for(int x = 0; x <cruiser.length; x++){
+                cruiser[x] = startCruiser;
+                startCruiser++;
+        }
     }
 
-    public void setDestroyer(int[] destroyer) {
-        this.destroyer = destroyer;
+    void setDestroyer(int startDestroyer) {
+            for(int x = 0; x <destroyer.length; x++){
+                destroyer[x] = startDestroyer;
+                startDestroyer++;
+        }
     }
 
-    public void setLocationOAircraftCarrier(int locationOAircraftCarrier) {
-        this.locationOAircraftCarrier = locationOAircraftCarrier;
-    }
+    //Locations
+    public void setLocationOAircraftCarrier(int locationOAircraftCarrier) { this.locationOAircraftCarrier = locationOAircraftCarrier; }
 
     public void setLocationOfBattleship(int locationOfBattleship) {
         this.locationOfBattleship = locationOfBattleship;
@@ -69,6 +81,11 @@ class Ships {
 
     public void setLocationOfDestroyer(int locationOfDestroyer) {
         this.locationOfDestroyer = locationOfDestroyer;
+    }
+
+    void writeArray(){
+        for(int x: aircraftCarrier)
+            System.out.println(x);
     }
 
 

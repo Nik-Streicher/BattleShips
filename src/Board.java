@@ -18,24 +18,17 @@ class Board {
     }
     //Write hit.
     void hit(int column, int row){
-        for(int x = 0; x < board.length; x++){
-            for(int y =0; y < board[x].length; y++)
-                if(x == column && y == row){
-                    board[x][y] = '@';
-                    System.err.print(board[x][y] + " ");
-                }
-                else
-                    System.out.print(board[x][y] + " ");
-
-            System.out.println();
-        }
+        part('@',column,row);
     }
     //Write miss.
     void miss(int column,int row){
+        part('X',column,row);
+    }
+    private void part(char sign,int column,int row){
         for(int x = 0; x < board.length; x++){
             for(int y =0; y < board[x].length; y++)
                 if(x == column && y == row){
-                    board[x][y] = 'x';
+                    board[x][y] = sign;
                     System.out.print(board[x][y] + " ");
                 }
                 else
