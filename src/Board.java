@@ -24,6 +24,8 @@ class Board {
     void miss(int column,int row){
         part('X',column,row);
     }
+
+    //write method
     private void part(char sign,int column,int row){
         for(int x = 0; x < board.length; x++){
             for(int y =0; y < board[x].length; y++)

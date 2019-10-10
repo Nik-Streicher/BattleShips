@@ -2,20 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d1ffcf2-2e9a-4a74-86b1-eabecf55c986" name="Default Changelist" comment="add Input class.&#10;optimized other classes.">
-      <change afterPath="$PROJECT_DIR$/src/Input.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TestSome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ships/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ships/Board.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ships/Ships.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ships/Ships.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Input.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ships.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ships.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestSome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestSome.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -25,6 +36,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Nikolay &lt;nikolay.sintsin@educanet.cz&gt;" />
+      </list>
+    </option>
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1RPMv7Ssqi42IjHT0k7oBjOvZLP" />
@@ -34,7 +51,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Práce s arrayList/src/Collection.java" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -98,12 +115,42 @@
       <workItem from="1569826675771" duration="8000" />
       <workItem from="1570128825200" duration="45000" />
       <workItem from="1570129067130" duration="1068000" />
-      <workItem from="1570169049319" duration="11149000" />
+      <workItem from="1570169049319" duration="13892000" />
+      <workItem from="1570432194380" duration="61000" />
+      <workItem from="1570454737752" duration="324000" />
+      <workItem from="1570548703715" duration="3920000" />
+      <workItem from="1570694894155" duration="5959000" />
+      <workItem from="1570726134739" duration="1509000" />
     </task>
+    <task id="LOCAL-00001" summary="add Input class.&#10;optimized other classes.">
+      <created>1570182076356</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570182076356</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add Input class.&#10;optimized other classes.">
+      <created>1570184522957</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1570184522957</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
