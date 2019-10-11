@@ -1,23 +1,27 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
+        // player 1
+        Ships player1 = new Ships();
+        Board boardPlayer1 = new Board();
+        // player 2
+        Ships player2 = new Ships();
+        Board boardPlayer2 = new Board();
 
-        Ships sh = new Ships();
-        Board br = new Board();
+        Scanner scanner = new Scanner(System.in);
 
-        Scanner in = new Scanner(System.in);
-        for(int y = 0 ; y < 2; y++ ){
-            System.out.println("Please enter column and row");
-            int num1 = in.nextInt();
-            int num2 = in.nextInt();
-            if(sh.getHit(num1,num2)){
-                br.hit(num1,num2);
-            }else br.miss(num1,num2);
-
+        System.out.println("Player 1");
+        for(int x = 0;x < 5;x++){
+            System.out.println("1) Horizontal\n2) Vertical");
+            player1.place(player1.directory(scanner.nextInt()));
         }
-        Thread.sleep(4000);
-        System.out.println("\n\nBoard Now");
-        br.write();
+
+        System.out.println("Player 2");
+        for(int x = 0;x < 5;x++){
+            System.out.println("1) Horizontal\n2) Vertical");
+            player2.place(player2.directory(scanner.nextInt()));
+        }
+
     }
 }
