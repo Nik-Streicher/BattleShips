@@ -43,15 +43,14 @@ class Ships {
         } else if (ignoredHit(y, x, cruiser, locationOfCruiser)) {
             return true;
 
-        } else if (ignoredHit(y, x, destroyer, locationOfDestroyer)){
+        } else if (ignoredHit(y, x, destroyer, locationOfDestroyer)) {
             return true;
-        }
-        else return false;
+        } else return false;
     }
 
 
     //Set
-    private void set(int position, int start, String value,ArrayList<Integer> ship,ArrayList<Integer> shipLocation) {
+    private void set(int position, int start, String value, ArrayList<Integer> ship, ArrayList<Integer> shipLocation) {
         if (value.equals("horizon")) {
             for (int x = 0; x < 5; x++) {
                 ship.add(start);
@@ -100,16 +99,16 @@ class Ships {
                 type = in.nextInt();
                 switch (type) {
                     case 1:
-                        set(position,start,value,aircraftCarrier,locationOAircraftCarrier);
+                        set(position, start, value, aircraftCarrier, locationOAircraftCarrier);
                         break;
                     case 2:
-                        set(position,start,value,battleship,locationOfBattleship);
+                        set(position, start, value, battleship, locationOfBattleship);
                         break;
                     case 3:
-                        set(position,start,value,cruiser,locationOfCruiser);
+                        set(position, start, value, cruiser, locationOfCruiser);
                         break;
                     case 4:
-                        set(position,start,value,destroyer,locationOfDestroyer);
+                        set(position, start, value, destroyer, locationOfDestroyer);
                         break;
                     default:
                         System.out.println("Wrong syntax");
@@ -120,13 +119,13 @@ class Ships {
                 type = in.nextInt();
                 switch (type) {
                     case 2:
-                        set(position,start,value,battleship,locationOfBattleship);
+                        set(position, start, value, battleship, locationOfBattleship);
                         break;
                     case 3:
-                        set(position,start,value,cruiser,locationOfCruiser);
+                        set(position, start, value, cruiser, locationOfCruiser);
                         break;
                     case 4:
-                        set(position,start,value,destroyer,locationOfDestroyer);
+                        set(position, start, value, destroyer, locationOfDestroyer);
                         break;
                 }
                 break;
@@ -135,17 +134,17 @@ class Ships {
                 type = in.nextInt();
                 switch (type) {
                     case 3:
-                        set(position,start,value,cruiser,locationOfCruiser);
+                        set(position, start, value, cruiser, locationOfCruiser);
                         break;
                     case 4:
-                        set(position,start,value,destroyer,locationOfDestroyer);
+                        set(position, start, value, destroyer, locationOfDestroyer);
                         break;
                 }
                 break;
             case 9:
                 System.out.println("Destroyer set");
                 //set destroyer
-                set(position,start,value,destroyer,locationOfDestroyer);
+                set(position, start, value, destroyer, locationOfDestroyer);
                 break;
             default:
                 System.out.println("Wrong syntax");

@@ -16,6 +16,7 @@ class Board {
             System.out.println();
         }
     }
+
     //Write hit.
     void hit(int column, int row) {
         part('@', column, row);
