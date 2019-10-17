@@ -33,20 +33,20 @@ class Ships {
         return false;
     }
 
-    void hit(int y, int x) {
+    boolean hit(int y, int x) {
         if (ignoredHit(y, x, aircraftCarrier, locationOAircraftCarrier)) {
-            System.out.println("Hit");
+            return true;
 
         } else if (ignoredHit(y, x, battleship, locationOfBattleship)) {
-            System.out.println("Hit");
+            return true;
 
         } else if (ignoredHit(y, x, cruiser, locationOfCruiser)) {
-            System.out.println("Hit");
+            return true;
 
-        } else if (ignoredHit(y, x, destroyer, locationOfDestroyer))
-            System.out.println("Hit");
-
-        else System.out.println("Miss");
+        } else if (ignoredHit(y, x, destroyer, locationOfDestroyer)){
+            return true;
+        }
+        else return false;
     }
 
 

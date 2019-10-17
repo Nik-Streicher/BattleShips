@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d1ffcf2-2e9a-4a74-86b1-eabecf55c986" name="Default Changelist" comment="remove Input class.&#10;optimized other classes.">
-      <change afterPath="$PROJECT_DIR$/src/Option.java" afterDir="false" />
+    <list default="true" id="9d1ffcf2-2e9a-4a74-86b1-eabecf55c986" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ships/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ships/Board.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Ships/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ships/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Ships/Ships.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ships/Ships.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ships.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ships.java" afterDir="false" />
     </list>
@@ -126,7 +123,13 @@
       <workItem from="1570548703715" duration="3920000" />
       <workItem from="1570694894155" duration="5959000" />
       <workItem from="1570726134739" duration="2287000" />
-      <workItem from="1570773577551" duration="7114000" />
+      <workItem from="1570773577551" duration="7892000" />
+      <workItem from="1570907428820" duration="74000" />
+      <workItem from="1571037496468" duration="15000" />
+      <workItem from="1571302939809" duration="576000" />
+      <workItem from="1571303603903" duration="2000" />
+      <workItem from="1571320720391" duration="918000" />
+      <workItem from="1571339534028" duration="1626000" />
     </task>
     <task id="LOCAL-00001" summary="add Input class.&#10;optimized other classes.">
       <created>1570182076356</created>
@@ -149,7 +152,21 @@
       <option name="project" value="LOCAL" />
       <updated>1570727800217</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="remove Input class.&#10;optimized other classes.">
+      <created>1570780899474</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1570780899474</updated>
+    </task>
+    <task id="LOCAL-00005" summary="optimized ships class.">
+      <created>1570780926965</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1570780926965</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +201,7 @@
     </ignored-roots>
     <MESSAGE value="add Input class.&#10;optimized other classes." />
     <MESSAGE value="remove Input class.&#10;optimized other classes." />
-    <option name="LAST_COMMIT_MESSAGE" value="remove Input class.&#10;optimized other classes." />
+    <MESSAGE value="optimized ships class." />
+    <option name="LAST_COMMIT_MESSAGE" value="optimized ships class." />
   </component>
 </project>
