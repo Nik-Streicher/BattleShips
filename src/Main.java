@@ -3,8 +3,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws InterruptedException {
 
-        int column;
-        int row;
         // player 1
         Ships player1 = new Ships();
         Board boardPlayer1 = new Board();
@@ -12,46 +10,48 @@ public class Main {
         Ships player2 = new Ships();
         Board boardPlayer2 = new Board();
 
+        //Scanner
         Scanner in = new Scanner(System.in);
 
+        //player 1 fill phase
         System.out.println("Player 1");
-        System.out.println("Please enter ships position");
-        for (int x = 0; x < 5; x++) {
-            System.out.println("1) Horizontal\n2) Vertical");
-            player1.place(player1.directory(in.nextInt()));
-        }
-
+        fill(player1, in);
+        //player 2 fill phase
         System.out.println("Player 2");
-        System.out.println("Please enter ships position");
-        for (int x = 0; x < 5; x++) {
-            System.out.println("1) Horizontal\n2) Vertical");
-            player2.place(player2.directory(in.nextInt()));
-        }
+        fill(player2,in);
 
+        //Need phase ending
+        //add Win phase later
         while (true) {
             // player 1 turn
             System.out.println("Player 1");
-            boardPlayer2.write();
-            System.out.println("select fire position (y and x) ");
-            column = in.nextInt();
-            row = in.nextInt();
-
-            if (player2.hit(column - 1, row - 1)) {
-                boardPlayer2.hit(column - 1, row - 1);
-            } else boardPlayer2.miss(column - 1, row - 1);
-            Thread.sleep(2000);
+            firePhase(player2, boardPlayer2, in);
 
             //player 2 turn
             System.out.println("Player 2");
-            boardPlayer1.write();
-            System.out.println("select fire position (y and x) ");
-            column = in.nextInt();
-            row = in.nextInt();
+            firePhase(player1, boardPlayer1, in);
+        }
+    }
 
-            if (player1.hit(column - 1, row - 1)) {
-                boardPlayer1.hit(column - 1, row - 1);
-            } else boardPlayer1.miss(column - 1, row - 1);
-            Thread.sleep(2000);
+    private static void firePhase(Ships player, Board boardPlayer, Scanner in) throws InterruptedException {
+        int column;
+        int row;
+        boardPlayer.write();
+        System.out.println("select fire position (y and x) ");
+        column = in.nextInt();
+        row = in.nextInt();
+
+        if (player.hit(column - 1, row - 1)) {
+            boardPlayer.hit(column - 1, row - 1);
+        } else boardPlayer.miss(column - 1, row - 1);
+        Thread.sleep(2000);
+    }
+
+    private static void fill(Ships player, Scanner in){
+        System.out.println("Please enter ships position");
+        for (int x = 0; x < 5; x++) {
+            System.out.println("1) Horizontal\n2) Vertical");
+            player.place(player.directory(in.nextInt()));
         }
     }
 }
