@@ -21,11 +21,11 @@ class Ships {
     }
 
     //Checking hits
-    private boolean ignoredHit(int y, int x, ArrayList<Integer> one, ArrayList<Integer> two) {
+    private boolean ignoredHit(int column, int row, ArrayList<Integer> one, ArrayList<Integer> two) {
         for (int w : one) {
-            if (w == y) {
+            if (w == column) {
                 for (int r : two) {
-                    if (x == r)
+                    if (row == r)
                         return true;
                 }
             }

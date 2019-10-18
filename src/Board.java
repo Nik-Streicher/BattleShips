@@ -1,6 +1,10 @@
 import java.util.Arrays;
 
 class Board {
+    char[][] getBoard() {
+        return board;
+    }
+
     //create a board.
     private char[][] board = new char[10][10];
 
@@ -38,6 +42,16 @@ class Board {
                     System.out.print(board[x][y] + " ");
 
             System.out.println();
+        }
+
+    }
+
+    public class Input {
+        void write() {
+            for (char[] array : board) {
+                for (char interArray : array) System.out.print(interArray + " ");
+                System.out.println();
+            }
         }
 
     }

@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d1ffcf2-2e9a-4a74-86b1-eabecf55c986" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Win.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ships.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ships.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestSome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestSome.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +32,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -128,7 +132,7 @@
       <workItem from="1571303603903" duration="2000" />
       <workItem from="1571320720391" duration="918000" />
       <workItem from="1571339534028" duration="1869000" />
-      <workItem from="1571378879593" duration="1002000" />
+      <workItem from="1571378879593" duration="4220000" />
     </task>
     <task id="LOCAL-00001" summary="add Input class.&#10;optimized other classes.">
       <created>1570182076356</created>
@@ -179,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571344219922</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added some code to main&#10;optimized main">
+      <created>1571379916419</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1571379916419</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +227,7 @@
     <MESSAGE value="remove Input class.&#10;optimized other classes." />
     <MESSAGE value="optimized ships class." />
     <MESSAGE value="Added some code to main" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some code to main" />
+    <MESSAGE value="Added some code to main&#10;optimized main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some code to main&#10;optimized main" />
   </component>
 </project>
