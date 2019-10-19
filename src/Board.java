@@ -3,65 +3,32 @@ import java.util.Scanner;
 
 class Board {
 
-    // player 1
-    private Ships player1 = new Ships();
-    private Board boardPlayer1 = new Board();
 
-    // player 2
-    private Ships player2 = new Ships();
-    private Board boardPlayer2 = new Board();
+    //fill the board
+    Board() {
+        for (char[] array : board) Arrays.fill(array, 'o');
+    }
 
     //Scanner
     private Scanner in = new Scanner(System.in);
 
-    // Ending class
-    private Win win = new Win();
+    private Ships player = new Ships();
 
-    void runFill(){
-        //player 1 fill phase
-        System.out.println("Player 1");
-        fill(player1, in);
-        //player 2 fill phase
-        System.out.println("Player 2");
-        fill(player2, in);
-    }
-
-    void runFire() throws InterruptedException {
-        while (true) {
-            // player 1 turn
-            System.out.println("Player 1");
-            firePhase(player2, boardPlayer2, in);
-
-            if(win.complete(boardPlayer2.getBoard())){
-                System.out.println("Player 1 wins");
-                return;
-            }
-            //player 2 turn
-            System.out.println("Player 2");
-            firePhase(player1, boardPlayer1, in);
-
-            if(win.complete(boardPlayer1.getBoard())){
-                System.out.println("Player 2 wins");
-                return;
-            }
-        }
-    }
-
-    private void firePhase(Ships player, Board boardPlayer, Scanner in) throws InterruptedException {
+    void firePhase() throws InterruptedException {
         int column;
         int row;
-        boardPlayer.write();
+        write();
         System.out.println("select fire position (y and x) ");
         column = in.nextInt();
         row = in.nextInt();
 
         if (player.hit(column - 1, row - 1)) {
-            boardPlayer.hit(column - 1, row - 1);
-        } else boardPlayer.miss(column - 1, row - 1);
+            hit(column - 1, row - 1);
+        } else miss(column - 1, row - 1);
         Thread.sleep(2000);
     }
 
-    private void fill(Ships player, Scanner in) {
+    void fill() {
         System.out.println("Please enter ships position");
         for (int x = 0; x < 5; x++) {
             System.out.println("1) Horizontal\n2) Vertical");
@@ -70,17 +37,12 @@ class Board {
     }
 
     // getter
-    private char[][] getBoard() {
+    char[][] getBoard() {
         return board;
     }
 
     //create a board.
     private char[][] board = new char[10][10];
-
-    //Fill a board.
-    Board() {
-        for (char[] array : board) Arrays.fill(array, 'o');
-    }
 
     //Write the Board.
     private void write() {
