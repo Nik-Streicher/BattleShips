@@ -1,6 +1,6 @@
 class Win {
 
-    boolean complete(char[][] board) {
+    static boolean complete(char[][] board) {
         int counter = 0;
         for (char[] x : board) {
             for (char y : x) {
