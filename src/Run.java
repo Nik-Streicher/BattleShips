@@ -1,15 +1,15 @@
 class Run {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args){
         Run run = new Run();
         run.runFill();
         run.runFire(run.boardPlayer2, run.boardPlayer1);
     }
     // player 1
-    private Board boardPlayer1 = new Board();
+    private Control boardPlayer1 = new Control();
 
     // player 2
-    private Board boardPlayer2 = new Board();
+    private Control boardPlayer2 = new Control();
 
     private void runFill() {
         //player 1 fill phase
@@ -20,7 +20,7 @@ class Run {
         boardPlayer2.fill();
     }
 
-    private void runFire(Board boardPlayer2, Board boardPlayer1) throws InterruptedException {
+    private void runFire(Control boardPlayer2, Control boardPlayer1){
         while (true) {
             // player 1 turn
             System.out.println("Player 1");

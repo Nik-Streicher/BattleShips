@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d1ffcf2-2e9a-4a74-86b1-eabecf55c986" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Control.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Run.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Win.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Win.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ships.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ships.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +78,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Run">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Ships" />
@@ -101,8 +102,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Run" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.TestSome" />
       </list>
     </recent_temporary>
@@ -146,7 +147,10 @@
       <workItem from="1571645705048" duration="124000" />
       <workItem from="1571663040822" duration="64000" />
       <workItem from="1571984248198" duration="76000" />
-      <workItem from="1571984403411" duration="468000" />
+      <workItem from="1571984403411" duration="1324000" />
+      <workItem from="1571985918528" duration="124000" />
+      <workItem from="1571986261312" duration="951000" />
+      <workItem from="1571987582023" duration="1967000" />
     </task>
     <task id="LOCAL-00001" summary="add Input class.&#10;optimized other classes.">
       <created>1570182076356</created>
@@ -232,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571486717104</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Removed Main">
+      <created>1571984945871</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1571984945871</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,6 +284,7 @@
     <MESSAGE value="Optimized main&#10;added Win class" />
     <MESSAGE value="Optimized main&#10;added main methods to board" />
     <MESSAGE value="Optimized Main.&#10;Add Run class.&#10;Optimized Board." />
-    <option name="LAST_COMMIT_MESSAGE" value="Optimized Main.&#10;Add Run class.&#10;Optimized Board." />
+    <MESSAGE value="Removed Main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed Main" />
   </component>
 </project>
